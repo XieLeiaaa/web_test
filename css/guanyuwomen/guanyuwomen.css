@@ -1,0 +1,206 @@
+@charset "utf-8";
+/* CSS Document */
+.body{
+	font-size: 14px;
+	font-family: '微软雅黑';
+	margin:0 auto; padding:0;
+	}
+.maxbox{ width:1349px; height:2955px; background-color:#fff; margin:0 auto;}
+
+.box{ width:1349px; margin:0 auto;}
+.daohang{ width:1349px; height:120px; margin:0; padding:0; float:left;
+	}
+.daohang-toplogo{ margin-left:131px; margin-top:15px;float:left;
+	}
+.daohang-wenzi{ margin-left:385px; float:left;margin-top:50px;margin: 50 auto;
+	}
+.daohang-wenzi li{ font-size:20px; float:left;list-style-type:none;display:inline; margin-left:50px;text-decoration:none; float:left;text-align:center; margin-top:25px;
+	}
+.daohang-wenzi li a{text-decoration:none; color:#000;
+   	}
+.daohang-wenzi li a:hover{ color:white;
+	}
+.daohang-wenzi .clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden
+	}
+.clearfix{*+height:1%;
+	}
+*{ margin: 0; padding: 0; list-style: none; 
+	}
+.daohang-wenzi li{ 
+			float: left; 
+			padding: 5px  20px; 
+			color:#333; 
+			font-weight: 590;
+			margin: 0 10px 0 0; 
+			transition: all .5s ease;
+	}
+.daohang-wenzi li:hover{
+			border-radius: 30px; 
+			background: #666;
+			color:#fff;
+	}
+.daohang-tt{ width:1349px; height:7px; background-color:#000; float:left;
+	}
+.banner{ width:1349px; height:402px; float:left;
+	}
+/*---------------------导航下拉效果-------------------------------------*/
+.daohang ul li ul{display: none;}
+.daohang ul li:hover ul{display: block; position: absolute;z-index:3;width:250px;}
+.daohang ul li ul li{float:left; margin: 8px 120px 0 -20px; background-color:#fff; border:1px solid #000;}
+.daohang ul li ul li a{text-decoration:none; color:#000;}
+/*--------------------------------核心业务--------------------------------------*/
+.hexinyewu{ width:1349px; height:736px; float:left;
+	}
+.hexinyewutxt{ width:425px;height:84px; float:left;text-align:center; margin-left:437.5px; margin-top:80px;
+	}
+.hexinyewutxt h1{ font-size:24px; color:#000; margin-top:10px;
+	}
+.hexinyewutxt h2{font-size:14px; color:#999;margin-top:20px;
+	}
+.hexinyewutb{ width:1300px; height:350px; float:left;  margin-top:50px; border:1px #999999; margin-left:24.5px;
+	}
+.hexinyewutb01{ width:164px; height:319px; float:left; margin-top:15.5px; margin-left:122px;
+	}
+.hexinyewutb01-pc{ width:60px; height:60px; float:left; margin-left:52px; margin-top:15px;
+	}
+.hexinyewutb01-txt{ width:164px; height:161px; float:left; margin-top:20px;
+	}	
+.hexinyewutb01 h1{ font-size:22px; color:#4b4b4b; line-height:50px;text-align:center;
+	}
+.hexinyewutb01 h2{ font-size:14px; color:#999;line-height:40px;text-align:center;
+	}
+.hexinyewutb02{ width:164px; height:319px; float:left;margin-top:15.5px; margin-left:133px;
+	}
+.hexinyewutb02-sj{ width:44px; height:64px; float:left;margin-left:60px; margin-top:15px;
+	}
+.hexinyewutb02-txt{ width:164px; height:161px; float:left; margin-top:20px;
+	}	
+.hexinyewutb02 h1{ font-size:22px; color:#4b4b4b; line-height:50px;text-align:center;
+	}
+.hexinyewutb02 h2{ font-size:14px; color:#999;line-height:40px;text-align:center;
+	}
+.hexinyewutb03{ width:164px; height:319px; float:left; margin-top:15.5px; margin-left:133px;
+	}
+.hexinyewutb03-tg{ width:56px; height:64px; float:left;margin-left:54px; margin-top:15px;
+	}
+.hexinyewutb03-txt{ width:164px; height:161px; float:left; margin-top:20px;
+	}	
+.hexinyewutb03 h1{ font-size:22px; color:#4b4b4b; line-height:50px;text-align:center;
+	}
+.hexinyewutb03 h2{ font-size:14px; color:#999;line-height:40px;text-align:center;
+	}
+.hexinyewutb04{ width:164px; height:319px; float:left;  margin-top:15.5px; margin-left:133px;
+	}
+.hexinyewutb04-vi{ width:53px; height:64px; float:left; margin-left:55.5px; margin-top:15px;
+	}
+.hexinyewutb04-txt{ width:164px; height:161px; float:left; margin-top:20px;
+	}	
+.hexinyewutb04 h1{ font-size:22px; color:#4b4b4b; line-height:50px;text-align:center;
+	}
+.hexinyewutb04 h2{ font-size:14px; color:#999;line-height:40px;text-align:center;
+	}
+/*--------------------------------我们的团队------------------------------*/
+.womendetuandui{ width:1349px; height:870px; float:left;
+	}
+.womendetuanduitxt{ width:816px; height:114px; float:left; margin-left:266.5px; margin-top:130px; text-align:center;
+	}
+.womendetuanduitxt h1{ font-size:24px; color:#000; margin-top:20px;
+	}
+.womendetuanduitxt h2{font-size:14px; color:#999;margin-top:15px;
+	}
+.womendetuanduitp{ width:1280px; height:520px;float:left; margin-left:34.5px; margin-top:80px;
+	}
+.womendetuanduitp-01{ width:270px; height:403px;float:left; margin-left:40px; margin-top:10px;
+	}
+.womendetuanduitp-01-txt{ width:270px; height:80px; float:left; text-align:center;
+	}
+.womendetuanduitp-01-txt h1{ font-size:16px; margin-top:5px;
+	}
+.womendetuanduitp-01-txt h2{ font-size:12px; margin-top:5px; color:#999;
+	}
+.womendetuanduitp-02{ width:270px; height:403px; float:left; margin-left:40px; margin-top:10px;
+	}
+.womendetuanduitp-02-txt{ width:270px; height:80px; float:left; text-align:center;
+	}
+.womendetuanduitp-02-txt h1{ font-size:16px; margin-top:5px;
+	}
+.womendetuanduitp-02-txt h2{ font-size:12px; margin-top:5px; color:#999;
+	}
+.womendetuanduitp-03{ width:270px; height:403px;float:left; margin-left:40px; margin-top:10px;
+	}
+.womendetuanduitp-03-txt{ width:270px; height:80px; float:left; text-align:center;
+	}
+.womendetuanduitp-03-txt h1{ font-size:16px; margin-top:5px;
+	}
+.womendetuanduitp-03-txt h2{ font-size:12px; margin-top:5px; color:#999;
+	}
+.womendetuanduitp-04{ width:270px; height:403px; float:left; margin-left:40px; margin-top:10px;
+	}
+.womendetuanduitp-04-txt{ width:270px; height:80px;float:left; text-align:center;
+	}
+.womendetuanduitp-04-txt h1{ font-size:16px; margin-top:5px;
+	}
+.womendetuanduitp-04-txt h2{ font-size:12px; margin-top:5px; color:#999;
+	}
+/*--------------------------------值得信赖的伙伴---------------------------*/
+.zhidexinlaidehuoban{ width:1349px; height:638px;float:left;
+	}
+.zhidexinlaidehuoban-txt{ width:578px; height:97px; float:left; margin-left:385.5px; margin-top:50px; text-align:center;
+	}
+.zhidexinlaidehuoban-txt h1{ font-size:24px; color:#000; margin-top:20px;
+	}
+.zhidexinlaidehuoban-txt h2{font-size:14px; color:#999;margin-top:15px;
+	}
+.zhidexinlaidehuoban-tp{ width:1200px; height:360px;  float:left; margin-left:74.5px; margin-top:70px; border:1px solid;
+	}
+/*------------------------------------底部版权---------------------------*/
+.dbbq{ width:1349px; height:354px; float:left; background-image:url(../img/%E9%A6%96%E9%A1%B5img/db-kk01.png); background-color:#333;
+	}
+.dbbq-logo{ width:255px; height:200px; float:left;margin-left:50px; margin-top:77px;text-align:center;
+	}
+.dbbq-txt{ width:630px; height:200px; float:left;  margin-top:72px; margin-left:52px;
+	}
+.dbbq-txt-qq{ width:12px; height:12px;float:left; margin-top:15px; margin-left:20px;
+	}	
+.dbbq-txt-email{ width:12px; height:10px;  float:left; margin-left:-12px; margin-top:56px;
+	}
+.dbbq-txt-phone{ width:11px; height:12px;float:left; margin-left:-12px; margin-top:94px;
+	}
+.dbbq-txt-add{ width:12px; height:16px; float:left; margin-left:-12px; margin-top:132px;
+	}
+.dbbq-txt-lxwm{ width:280px; height:35px; float:left; margin-left:-525px; margin-top:-185px;
+	}
+.dbbq-txt-lxwm p{color:#999; line-height:35px;
+	}
+.dbbq-txt-lxwm a{ color:#999;}
+.dbbq-txt-lxwm a:hover{ color:#4ab344;}
+.dbbq-txt-wenzi{ width:300px; height:146px; float:left; margin-left:18px;
+	}
+.dbbq-txt-wenzi h1 { font-size:12px; color:#999; line-height:40px;
+	}
+.dbbq-txt-wenzi h2 { font-size:12px; color:#999; line-height:40px;
+	}
+.dbbq-txt-wenzi h3 { font-size:12px; color:#999; line-height:40px;
+	}
+.dbbq-txt-wenzi h4 { font-size:12px; color:#999; line-height:40px;
+	}
+.dbbq-txt-bq{ width:500px; height:38px; float:left; margin-left:10px; margin-top:10px;
+	}
+.dbbq-txt-bq p{ font-size:12px; color:#999; text-align:left; margin-top:40px;
+	}
+.dbbq-txt-bq p a{ color:#F00;}
+.dbbq-txt a{text-decoration:none;
+	}
+.dbbq-wechat{ width:62px; height:60px; float:left; margin-left:-80px; margin-top:165px;
+	}
+.dbbq-sina{ width:62px; height:60px; float:left; margin-top:165px;
+	}
+/*----------------------------------------------------------------------*/
+.page-all{
+	width: 1200px;
+	margin: 0 auto;
+}
+.fl{ float: left; }
+.fr{ float:right; }
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+.clearfix{*+height:1%;}		

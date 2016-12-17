@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>重庆百应视觉（联系我们）</title>
+<link href="../../css/lianxiwomen/lianxiwomen.css" rel="stylesheet" type="text/css" />
+<link  href="../../css/css.css"  rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../js/lrtk.js"></script>
+
+<style type="text/css">
+.iw_poi_title {
+    color: #CC5522;
+    font-size: 14px;
+    font-weight: bold;
+    overflow: hidden;
+    padding-right: 13px;
+    white-space: nowrap
+}
+
+.iw_poi_content {
+    font: 12px arial, sans-serif;
+    overflow: visible;
+    padding-top: 4px;
+    white-space: -moz-pre-wrap;
+    word-wrap: break-word
+}
+</style>
+<script type="text/javascript"
+    src="http://api.map.baidu.com/api?key=&v=1.1&services=true">
+</script>
+
+<!--百度地图容器-->
+
+</head>
+
+<body style="overflow-x:hidden" bgcolor="#cccccc">
+ <div class="maxbox">
+
+ <div class="box">
+	<div class="daohang">
+    	<div class="daohang-toplogo"><a href=""><img src="../../img/logo/top-logo.png" /></a></div>
+        <ul class="daohang-wenzi clearfix">
+        	<li><a href="../../index.html">首页</a></li>
+            <li><a  href="../gongsijianjie/gongsijianjie.html">公司简介</a></li>
+            <li><a href="../fuwujieshao/fuwujieshao.html">服务介绍</a></li>
+            <li><a href="../xinwendongtai/xinwendongtai.html">新闻动态</a></li>
+            <li><a href="../guanyuwomen/guanyuwomen.html">关于我们</a>
+            	<ul>
+                	<li><a  href="../canpinzhanshi/canpinzhanshi.html">产品展示</a></li>
+                    <li><a  href="../huiyuandenglu/huiyuandenglu.html">会员登录</a></li>
+                    <li><a  href="../huiyuanzhuce/huiyuanzhuce.html">会员注册</a></li>
+                    <li><a  href="../lianxiwomen/lianxiwomen.html">联系我们</a></li>
+                    <li><a  href="../liuyanban/liuyanban.html">留言板&emsp;</a></li>
+					<li><a  href="../gouwuche/gouwuche.html">购物车&emsp;</a></li>
+				</ul>
+            </li>
+        </ul>
+    </div>
+    <div class="daohang-tt"></div>
+    
+
+    
+    <div class="banner"><img src="../../img/banner/7.jpg"/></div>
+<!--/*-----------------------------公司简介---------------------------------*/-->
+	<div class="canpinzhanshi">
+    	<div class="canpinzhanshitxt">
+        	<div class="canpinzhanshitxt-box"></div>
+            <div class="canpinzhanshitxt-wenzi">
+            	公司地址
+            </div>
+            <div class="canpinzhanshitxt-tt"></div>
+        </div>
+        <div
+    style="width: 1200px; height: 320px; border: #ccc solid 1px; margin-bottom: 20px;"
+    id="dituContent"></div>
+<div>
+    <input type="text" id="input" style="margin-left:75px;" />
+    <span><a href="http://map.baidu.com/"><input type="button" onclick="searchMap();" value="搜索地图" /></a></span>
+</div>
+
+<script type="text/javascript">
+//创建和初始化地图函数：
+function initMap() {
+    createMap(114.025974, 22.546054);//创建地图
+    setMapEvent();//设置地图事件
+    addMapControl();//向地图添加控件
+}
+
+//地图搜索
+function searchMap() {
+    var area = document.getElementById("input").value; //得到地区
+    var ls = new BMap.LocalSearch(map);
+    ls.setSearchCompleteCallback(function(rs) {
+        if (ls.getStatus() == BMAP_STATUS_SUCCESS) {
+            var poi = rs.getPoi(0);
+            if (poi) {
+                createMap(x=106.580806.lng,y=29.612838.lat);//创建地图(经度poi.point.lng,纬度poi.point.lat)
+                setMapEvent();//设置地图事件
+                addMapControl();//向地图添加控件
+            }
+        }
+    });
+    ls.search(area);
+}
+
+//创建地图函数：
+function createMap(x, y) {
+    var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+    var point = new BMap.Point(106.580806,29.612838);//定义一个中心点坐标
+    map.centerAndZoom(point, 12);//设定地图的中心点和坐标并将地图显示在地图容器中
+    window.map = map;//将map变量存储在全局
+}
+
+//地图事件设置函数：
+function setMapEvent() {
+    map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+    map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+    map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+    map.enableKeyboard();//启用键盘上下左右键移动地图
+}
+
+//地图控件添加函数：
+function addMapControl() {
+    //向地图中添加缩放控件
+    var ctrl_nav = new BMap.NavigationControl( {
+        anchor : BMAP_ANCHOR_TOP_LEFT,
+        type : BMAP_NAVIGATION_CONTROL_LARGE
+    });
+    map.addControl(ctrl_nav);
+    //向地图中添加缩略图控件
+    var ctrl_ove = new BMap.OverviewMapControl( {
+        anchor : BMAP_ANCHOR_BOTTOM_RIGHT,
+        isOpen : 1
+    });
+    map.addControl(ctrl_ove);
+    //向地图中添加比例尺控件
+    var ctrl_sca = new BMap.ScaleControl( {
+        anchor : BMAP_ANCHOR_BOTTOM_LEFT
+    });
+    map.addControl(ctrl_sca);
+}
+
+initMap();//创建和初始化地图
+</script>
+
+<!--/*------------------------------底部版权------------------------------*/-->    
+    <div class="dbbq">
+    	<div class="dbbq-logo">
+        	<a href=""><img src="../../img/shouye-img/db-logo.png"/></a>
+        </div>
+        <div class="dbbq-txt">
+        	<div class="dbbq-txt-qq">
+            	<img src="../../img/shouye-img/tb/foot-tip-qq.png"/>
+            </div>
+            <div class="dbbq-txt-email">
+            	<img src="../../img/shouye-img/tb/foot-tip-email.png"/>
+            </div>
+            <div class="dbbq-txt-phone">
+            	<img src="../../img/shouye-img/tb/foot-tip-phone.png"/>
+            </div>
+            <div class="dbbq-txt-add">
+            	<img src="../../img/shouye-img/tb/foot-tip-position.png"/>
+            </div>
+            <div class="dbbq-txt-wenzi">
+            <h1>&emsp;Q&emsp;Q：28924216</h1>
+            <h2>&emsp;邮箱：28924216@qq.com</h2>
+            <h3>&emsp;电话：彭渊  18996381640&emsp;邹习之  18996381317</h3>
+            <h4>&emsp;地址：重庆江北招商江湾城5栋7-2</h4>
+            </div>
+            <div class="dbbq-txt-bq">
+            <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;All Rights Reserved.©2010-2016 <a href="">渝ICP备0213466313</a> 百应科技版权所有</p>
+            </div>
+            <div class="dbbq-txt-lxwm">
+            	<p style="font-size:24px"><a href="../lianxiwomen/lianxiwomen.html">联系我们/contact us</a></p>
+            </div>
+        </div>
+        <div class="dbbq-wechat">
+        	<a href="https://wx.qq.com/"><img src="../../img/shouye-img/tb/wechat.png"/></a>
+        </div>
+        <div class="dbbq-sina">
+        	<a href="http://www.weibo.com/login.php?url=http%3A%2F%2Fvip.weibo.com%2F"><img src="../../img/shouye-img/tb/sina.png"/></a>
+        </div>
+    </div>     
+
+  
+  
+  </div>
+  
+  </div>
+</body>
+</html>
